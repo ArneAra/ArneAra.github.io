@@ -5,75 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Van Straeten</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js"> </script>
 </head>
 <body>
 
-<div class="logo">
-
-    <img src="/photo/logo.png"/>
-        
-</div>
+<img class="logo"  src="/photo/logo.png"/>
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-<div class="Navbar">
-
-    <a class="active" href="/index.html">Home</a>
-    <a style="float: left;" href="/Fietsen.html">Fietsen</a>
-    <a style="float: left;" href="/Toebehoren.html">Toebehoren</a>
-    <a style="float: right;" href="/Acties.html">Acties</a>
-    <a style="float: left;" href="/TweedeHands.html">TweedeHands</a>
-    <a style="float: right;" href="/Team.html">Team</a>
-    <a style="float: right;" href="/contact.html">Contact</a>    
     
-</div class="Navbar">
-
-
-<div class="slideshow-container">
-  <div class="mySlides1">
-    <img src="/photo/banner1.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides1">
-    <img src="/photo/banner2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides1">
-    <img src="/photo/banner3.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-
-  
+<div class="topnav" id="myTopnav">
+  <a class="active" href="/index.html">Home</a>
+  <a href="/Fietsen.html">Fietsen</a>
+  <a href="/Toebehoren.html">Toebehoren</a>
+  <a href="/Acties.html">Acties</a>
+  <a href="/TweedeHands.html">TweedeHands</a>
+  <a href="/Team.html">Team</a>
+  <a href="/contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 
-<script>
-  let slideIndex = [1,1];
-  let slideId = ["mySlides1", "mySlides2"]
-  showSlides(1, 0);
-  showSlides(1, 1);
-  
-  function plusSlides(n, no) {
-    showSlides(slideIndex[no] += n, no);
-  }
-  
-  function showSlides(n, no) {
-    let i;
-    let x = document.getElementsByClassName(slideId[no]);
-    if (n > x.length) {slideIndex[no] = 1}    
-    if (n < 1) {slideIndex[no] = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    x[slideIndex[no]-1].style.display = "block";  
-  }
-  </script>
-
-</div>
 
 </body>
 </html>

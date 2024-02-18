@@ -1,0 +1,86 @@
+/*Navbar*/
+/* Add a black background color to the top navigation */
+.Navbar {
+    background-color: #333;
+    overflow: hidden;
+    height: flex;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .Navbar a {
+    float: left;
+    height: 100%;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .Navbar a:hover {
+    background-color: #8a2529;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .Navbar a.active {
+    background-color: #a62d32;
+    color: white;
+  }
+
+/*Navbar*/
+
+
+/*Logo*/
+.logo {
+  position: fixed;
+  margin-left: 44%;
+}
+/*Logo*/
+
+
+
+
+
+/*Banner*/
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/*Banner*/
